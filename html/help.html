@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/DTD/strict.dtd">
+<html>
+<head>
+  <!--CSS-->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="help/flick/jquery.ui.all.css"/> <!-- jQuery UI CSS framework -->
+  <link rel="stylesheet" type="text/css" href="help/help.css" media="screen" charset="utf-8" />
+
+  <!--JS-->
+  <script src="jquery-1.7.1.min.js" type="text/javascript"></script> <!-- jQuery -->
+  <script src="help/help.js" type="text/javascript" charset="utf-8"></script>
+  <script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="help/jquery-ui-1.8.18/jquery.ui.core.js"></script> <!-- jQuery UI Library -->
+  <script src="help/jquery-ui-1.8.18/jquery.ui.widget.js"></script> <!-- jQuery UI Library -->
+  <script src="help/jquery-ui-1.8.18/jquery.ui.tabs.js"></script> <!-- jQuery UI Library -->
+  <script src="help/jquery.tools.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+  <div id="helpDiv"> <!-- left half div -->
+    <div id="tabs"> <!-- Maps/Graphs/Tabular Queries tabbed navigation -->
+      <ul>
+        <li><a href="#whatIsDiv">What is popupDic?</a></li>
+        <li><a href="#featuresDiv">Features</a></li>
+        <li><a href="#howToUseDiv">Video Tutorial</a></li>
+     </ul>
+      <div id="whatIsDiv">
+        <center>
+          <img src='../images/icon128.png' alt='popupDic'/>
+        </center>
+        <hr>
+        <p>
+        <span class='popupDic'>popupDic</span> is designed to help foreign language learners better remember new vocabulary they acquire online.
+        The idea behind it is very simple: <em>repetition</em> and <em>context</em> are key to remembering new words
+        that we learn, especially when they are words in a foreign language.
+        </p>
+
+        <p>
+        Although there are a number of excellent
+        dictionary websites online, one major problem is that once we have looked up a word and then moved on to a new page,
+        we usually tend to forget the word we looked up. A number of times, you might find yourself looking up the
+        same word from different webpages and only remembering that you have actually looked the word up before
+        <em>after</em> you have checked up on its meaning. This can be frustrating. <span class='popupDic'>popupDic</span> aims to solve this
+        problem by:
+        <ul>
+          <li> Maintaining an easily-accessible list of words that you have looked up. Although you could use an
+               external program like a Word processor or flashcard software to do this, <span class='popupDic'>popupDic</span> gives you the
+               word list functionality right in your browser, just two clicks away at all times!</li>
+          <li> Saving the context of words (the sentence they were found in) when you look them up.
+               The context of the word is often a very good memory aid.</li>
+          <li> Highlighting on any page the words you have looked up (even if they were looked up
+               from other pages). This means you can challenge yourself to remember what the words mean. And
+               if you don't remember, <span class='popupDic'>popupDic</span> can always remind you! ;)</li>
+        </ul>
+        <p>
+        What's more, <span class='popupDic'>popupDic</span> does all this without disturbing your normal browsing experience. <em>You</em>
+        turn on the features you want, when <em>you</em> want it.
+        </p>
+        <span class='popupDic'>popupDic</span> is currently aimed at individuals learning French.
+        </p>
+        <p>
+        <b><span class='popupDic'>popupDic</span> uses the excellent <a style='color:blue' href='http://www.wordreference.com'>Wordreference API</a>. Many thanks to the folks at Wordreference
+          for providing such a wonderful resource free of charge.</b>
+        </p>
+      </div>
+      <div id="featuresDiv">
+        <div>
+          <table id='poisonHolder'>
+            <tr id='chooseYourPoison'>
+              <td class='featuresChoice' id='popupDicOnOffChoice'>Turning popupDic On/Off</td>
+              <td class='featuresChoice'>Looking up Words</td>
+              <td class='featuresChoice'>Sidebar</td>
+              <td class='featuresChoice' style='border-right:0px;'>Highlighting</td>
+            </tr>
+          </table>
+        </div>
+        <div class='yourPoison' id='turningOnOffDiv'>
+          <p>
+          A quick look at the extension icon will
+          tell you whether <span class='popupDic'>popupDic</span> is on or off, as the following image shows
+          (see part enclosed in blue rectangle). If it says 'ON', the extension is active.
+          </p>
+          <center>
+            <img src='help/extensionOn.png'/>
+          </center>
+          <p>
+          If it says 'OFF', you need to turn the extension on. To do so, click on the icon and toggle the status button,
+          as shown in the following figure (see parts enclosed in blue rectangles).
+          </p>
+          <center>
+            <img src='help/turnedOffOn.png'/>
+          </center>
+          </p>
+          <p>
+          You need to do this only ONCE for
+          every browsing session (until the browser is closed and reopened). Turning off the extension is equally easy.
+          Simply toggle the Status button again.
+          </p>
+        </div>
+        <div class='yourPoison' id='lookingUpWordsDiv'>
+          <p>
+          <b>Make sure <span class='popupDic'>popupDic</span> is turned ON first.</b> Hover over
+          'Turning popupDic On/Off'  above if you're not sure about how to do this.
+          </p>
+          <p>
+          To look up word meanings, hold down the 'Alt' key on your keyboard and double-click the word you
+          wish to look up. The meaning of the word pops up on the page, as shown in the figure below. It's as simple
+          as that!
+          </p>
+          <center>
+            <img src='help/meaningPopup.png'/>
+          </center>
+          <p>
+          Click outside the popup or on the 'cross' icon to close the popup.
+          </p>
+        </div>
+        <div class='yourPoison' id='sidebarDiv'>
+          <p>
+          <b>Make sure <span class='popupDic'>popupDic</span> is turned ON first.</b> Hover over
+          'Turning popupDic On/Off'  above if you're not sure about how to do this.
+          </p>
+          <p>
+          The sidebar displays a list of words you have looked up before. The sidebar is not displayed by default.
+          To turn it on, toggle the 'Sidebar' switch after clicking on the extension icon, as the image below shows (see
+          parts enclosed in blue rectangles).
+          </p>
+          <center>
+            <img src='help/sidebarOffOn.png'/>
+          </center>
+          <p>
+          If the page is refreshed, the sidebar will turn off and you must turn it back on again. Sidebar's must also
+          be toggled individually for each webpage. This is so that it interferes as little as possible with your
+          normal browsing.
+          </p>
+          <p>
+          The sidebar also saves the context the word was found in as a gloss (memory aid). You can see the
+          context by clicking on the bulb icon, as the following image shows (see part enclosed in blue
+          rectangles). Clicking on the bulb again will
+          hide the gloss.
+          </p>
+          <center>
+            <img src='help/sidebarDetails.png'/>
+          </center>
+          <p>
+          'Clear List' will clear all words from the extension's memory. <b><em>Be careful as this cannot be
+              undone!</em></b>
+          </p>
+        </div>
+        <div class='yourPoison' id='highlightingDiv'>
+          <p>
+          <b>Make sure <span class='popupDic'>popupDic</span> is turned ON first.</b> Hover over
+          'Turning popupDic On/Off'  above if you're not sure about how to do this.
+          </p>
+          <p>
+          Highlighting will help you exercise your memory. Turn it on/off by toggling the 'Highlighting' button
+          after clicking on the extension icon, as the image below shows (see part enclosed in blue rectangles).
+          </p>
+          <center>
+            <img src='help/highlightingOffOn.png'/>
+          </center>
+          <p>
+          Like the sidebar, highlighting must be turned on and off individually for each page. Additionally, refreshing
+          the page will remove the highlighting and you must turn it on again if you want it.
+          </p>
+          <p>
+          When Highlighting is on, words you have looked up before (on <em>any</em> page) will be highlighted on the current
+          page. You can check if you remember what they mean.
+          </p>
+          <p>
+          Hovering over a word shows a popup that asks precisely
+          this question.
+          <ul>
+            <li>If you do remember the meaning, simply move the mouse away and the popup will disappear.</li>
+            <li>If you don't remember the meaning, clicking on 'No' will display it for you, as the image below
+            shows. You can then close the popup by clicking on the 'Close' icon or anywhere outside the
+            popup.</li>
+          </ul>
+          </p>
+          <center>
+            <img src='help/hoverHighlight.png'/>
+          </center>
+        </div>
+      </div>
+      <div id="howToUseDiv">
+        <p>
+          Here is a short video demonstrating the installation procedure and a quick tour of <span class='popupDic'>popupDic</span>'s features.
+        </p>
+        <center>
+          <iframe width="560" height="315" src="http://www.youtube.com/embed/9eCLUmHCzvw" frameborder="0" allowfullscreen></iframe>
+        </center>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

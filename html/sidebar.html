@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/DTD/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <script src="sidebar/sidebar.js" type="text/javascript" charset="utf-8"></script>
+  <script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="sidebar/sidebar.css" type="text/css" media="screen" charset="utf-8" />
+</head>
+
+<body class="fbBody">
+
+  <!-- VerticalSplitter -->
+  <div id="fbVSplitter" class="fbVSplitter">&nbsp;</div>
+  <div id="fbHTSplitter" class="fbHTSplitter">&nbsp;</div>
+
+  <table id="sidebarSkeleton">
+    <tr id="sidebarTop">
+      <td>
+        <a id="helpButton" title="Get Help">&nbsp;</a>
+      </td>
+      <td>
+        <div id="title">PopupDic</div>
+      </td>
+      <td>
+        <a id="closeButton" title="Close the sidebar">&nbsp;</a>
+      </td>
+    </tr>
+    <tr id="sidebarCommands">
+      <td>
+        <span id='clearList'><a title="Clear the word list">Clear List</a></span>
+      </td>
+      <td>
+        <span id='summary'><a title="See summary of your usage">Your Usage</a></span>
+      </td>
+    </tr>
+  </table>
+  <div id="sidebarContent">
+    <table id='word-meanings'>
+    </table>
+  </div>
+  <div id="fbHBSplitter" class="fbHBSplitter">&nbsp;</div>
+</body>
+</html>

@@ -1,0 +1,270 @@
+html,body{
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+
+table#sidebarSkeleton{
+  width: 100%;
+  height: 100%;
+}
+
+tr#sidebarTop{
+  height: 43px;
+  width: 100%;
+  background: url('row1.png') repeat-x;
+  top: 0px;
+  position: absolute;
+}
+
+tr.oddrow{
+  /* background: #fcfbca; */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #B1DBD1));
+}
+
+tr.evenrow{
+  /* background: #fbfbfb; */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #E7E59C));
+}
+
+tr.gloss{
+  display: none;
+}
+
+td.tdgloss{
+  padding: 4px 14px;
+  font-style: italic;
+}
+
+div#title{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  cursor:default;
+  top: 7px;
+  position: absolute;
+  left: 10px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+tr#sidebarCommands{
+  height: 30px;
+  width: 100%;
+  background: url('row2.png') repeat-x;
+  top: 43px;
+  position: absolute;
+}
+
+span#clearList,
+span#summary{
+  background: url('clearList.png') repeat-x;
+  height: 18px;
+  left: 5px;
+  position: absolute;
+  top: 4px;
+  color: white;
+  padding: 1px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-left: 5px;
+  border-bottom: 1px solid lightSlateGray;
+  border-right: 1px solid lightSlateGray;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-weight: bold;
+}
+
+span#summary{
+  left: 90px;
+}
+
+span#clearList:hover,
+span#summary:hover{
+  background: url('clearListHover.png') repeat-x;
+  cursor:pointer;
+}
+
+a#helpButton{
+  background: url('helpButton.png');
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 44px;
+  top: 6px;
+  margin: 0 0 0 5px;
+}
+
+a#helpButton:hover{
+  background: url('helpButtonHover.png');
+  cursor:pointer;
+}
+
+a#closeButton{
+  background: url('closeButton.png');
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  margin: 0 0 0 5px;
+  cursor:pointer;
+}
+
+a#closeButton:hover{
+  background: url('closeButtonHover.png');
+}
+
+div#sidebarContent{
+  /* background: white; */
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #8F8F8E), color-stop(1, #E0E0E1));
+  /* background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #B1DBD1)); */
+  top: 73px;
+  /* height: 100%; */ /* shouldn't mix absolute positioning, height 100% /and/ bottom 0px */
+  bottom: 0px;
+  width: 100%;
+  position: absolute;
+  overflow-y: auto; /* provide a scrollbar when necessary */
+}
+
+table#word-meanings{
+  /*border: solid 6px gray;*/
+  line-height:21px;
+  border-collapse:collapse;
+  font-size: 17px;
+  width: 100%;
+  /*border-bottom: 1px ridge gray;*/
+}
+
+table#word-meanings td,th{
+  /* border-bottom: 1px solid gray; */
+  /* border-right: 1px solid gray; */
+}
+
+.firstCol{
+  padding: 3px 5px 3px 10px;
+  /*min-width: 100px;
+  width: 100px;
+  max-width: 100px;*/
+  vertical-align: top;
+}
+
+.secondCol{
+  padding: 3px 5px 3px 5px;
+  /*min-width: 30px;
+  width: 30px;
+  max-width: 30px;*/
+  vertical-align: top;
+  /*border-right: 1px solid gray;*/
+}
+
+.thirdCol{
+  padding: 3px 5px 3px 5px;
+  /*min-width: 120px;
+  width: 120px;
+  max-width: 120px;*/
+  vertical-align: top;
+}
+
+.origWord{
+  padding: 3px;
+  font-weight: bold;
+}
+
+span.pos{
+  /*padding-left: 12px;*/
+  font-weight: bold;
+  color:#DB0909;
+  font-style: italic;
+}
+
+div#infoMsg{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  padding: 8px 0px;
+  border-bottom: 1px ridge gray;
+  background: url('row1.png') repeat-x;
+  text-shadow: 0.1em 0.1em 0.3em black;
+  font-weight: bold;
+}
+
+/************************************************************************************************
+ Layout Controls
+*************************************************************************************************/
+/* fbToolbar buttons
+*************************************************************************************************/
+.fbSmallButton {
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    display: block;
+    text-decoration: none;
+    cursor: default;
+}
+
+#fbWindowButtons .fbSmallButton {
+    float: right;
+}
+
+#fbWindow_btDeactivate {
+    background: url(off.png);
+}
+
+#fbWindow_btDeactivate:hover {
+    background: url(offHover.png);
+}
+
+
+/* splitters from Firebug
+*************************************************************************************************/
+#fbHTSplitter, #fbHBSplitter {
+  background: #ece9d8;
+  color: #000;
+  border: 1px solid #716f64;
+  border-width: 1 0px;
+  position: absolute;
+  width: 100%;
+  /*cursor: e-resize;*/
+  overflow: hidden;
+  left: 0px;
+  text-decoration: none;
+  z-index: 9;
+}
+
+#fbHTSplitter{
+  height: 2px;
+  border-top-color: #aca899;
+  top: 0px;
+}
+
+#fbHBSplitter{
+  height: 3px;
+  border-bottom-color: #aca899;
+  bottom: 0px;
+}
+
+.fbVSplitter {
+    background: #ece9d8;
+    color: #000;
+    border: 1px solid #716f64;
+    border-width: 0 1px;
+    border-left-color: #aca899;
+    width: 2px;
+    /*cursor: e-resize;*/
+    overflow: hidden;
+    left: 0px;
+    text-decoration: none;
+    z-index: 10;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+}
+
+/* Webkit CSS Hack - bug in "highlight" named color */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .selectedElement{
+      background: #316AC5;
+      color: #fff !important;
+    }
+}

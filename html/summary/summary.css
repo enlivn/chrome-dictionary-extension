@@ -1,0 +1,89 @@
+table#summarySkeleton,
+table#wordList{
+  display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 6px solid gray;
+  border-spacing: 0px;
+  width: 600px;
+}
+
+table#wordList{
+  border-top: 0px; /*avoid a double border with summarySkeleton's lower border*/
+}
+
+table#summarySkeleton td,
+table#summarySkeleton th,
+table#wordList td,
+table#wordList th{
+  min-width: 200px;
+  vertical-align: top;
+  padding: 10px;
+}
+
+input#numRememberedWords{
+  max-width: 50px;
+}
+
+tr.header{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #E7E59C));
+  text-align: center;
+}
+
+tr#next1,
+tr#next2,
+tr#next3{
+  display: none;
+  text-align: right;
+}
+
+tr#trnumWordsLookedUp,
+tr#trnumHighlights,
+tr#trnumHighlightsReminded,
+tr#trdoYouRemember,
+tr#trnumRememberedWords,
+tr#trfinalResults,
+tr#next2,
+tr#next3,
+tr#survey1,
+tr#survey2,
+tr#error,
+div#numWordsRemembered{
+  display: none;
+}
+
+tr.oddrow{
+  /* background: #fcfbca; */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #B1DBD1));
+}
+
+tr.evenrow{
+  /* background: #fbfbfb; */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #E7E59C));
+}
+
+span.pos{
+  /*padding-left: 12px;*/
+  font-weight: bold;
+  color:#DB0909;
+  font-style: italic;
+}
+
+.origWord{
+  padding: 3px;
+  font-weight: bold;
+}
+
+button{
+  padding: 3px 20px;
+}
+
+span#warning{
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+}

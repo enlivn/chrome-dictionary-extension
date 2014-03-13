@@ -1,0 +1,108 @@
+html,body{
+  /*font-family: arial, verdana, sans-serif;*/
+  /*font-size: 22px;*/
+  /*margin: 0px;*/
+  height: 100%;
+}
+
+#blanket{
+  display: none;
+  background-color: #111;
+  opacity: 0.65;
+  filter:alpha(opacity=65);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  top:0px;
+  z-index: 2147483647; /* MAX z-index = 2147483647 */
+}
+
+#wordDefDiv{
+  display: none;
+  position: fixed;
+  background-color:#FAED96;
+  display: block;
+  font-family: arial, verdana, sans-serif;
+  margin: 0px !important;
+  border: 0px !important;
+  z-index: 2147483647 !important; /* MAX z-index = 2147483647 */
+}
+
+table#word-meanings{
+  border: solid 6px gray !important;
+  line-height:24px;
+  border-collapse:collapse;
+  margin: 0px !important;
+}
+
+table#word-meanings td,th{
+  border: 1px dotted gray !important;
+  font-size: 17px !important; /* important to prevent already-present styles from interfering */
+  background-color:#FAED96 !important; /* important to prevent already-present styles from interfering */
+  margin: 0px !important;
+}
+
+table#word-meanings img{
+  border: 0px !important;
+}
+
+div.infoMsg{
+  border: solid 6px gray;
+  font-size: 17px;
+  min-width: 250px;
+  width: 250px;
+  max-width: 250px;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.firstCol{
+  padding: 3px 5px 3px 5px;
+  min-width: 120px;
+  width: 120px;
+  max-width: 120px;
+  vertical-align: top;
+}
+
+#yesRemember,
+#noRemember{ /* for quiz popup */
+  padding: 5px 20px;
+}
+
+.secondCol{
+  text-align: left;
+  vertical-align: top;
+  padding: 0px 10px;
+}
+
+.thirdCol{
+  padding: 3px 5px 3px 5px;
+  min-width: 120px;
+  width: 120px;
+  max-width: 120px;
+  vertical-align: top;
+}
+
+.fourthCol{
+  padding: 3px 5px 3px 5px;
+}
+
+.origWord{
+  padding: 3px;
+  font-weight: bold;
+}
+
+.sense, td.ToW22, td.POS2{
+  padding-left: 1px;
+  font-size: 14px;
+  font-style: italic;
+  vertical-align: top;
+}
+
+span.pos{
+  /*padding-left: 12px;*/
+  font-weight: bold;
+  color:#DB0909;
+  font-style: italic;
+}

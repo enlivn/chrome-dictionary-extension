@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/DTD/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <script src="summary/summary.js" type="text/javascript" charset="utf-8"></script>
+  <script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="summary/summary.css" type="text/css" media="screen" charset="utf-8" />
+</head>
+
+<body class="fbBody">
+  <table id="summarySkeleton">
+    <tr class='header'>
+      <td colspan=2 style="border-bottom: 1px solid gray;">Your Usage Summary</td>
+    </tr>
+    <tr id='survey1'>
+      <td colspan=2>
+        Thank you for taking part in this study.<br><br>
+        Please proceed to the survey. You will first be notified of your rights as a participant in this study so you can formally consent to take part.<br><br>
+        No personal information will be collected at any point.<br><br>
+        <span id='warning'>
+          Do NOT close this tab. You will need to enter these values in the survey:
+        </span>
+      </td>
+    </tr>
+    <tr id="trfinalResults">
+      <td id="finalResults">
+      </td>
+    </td>
+    <tr id="trnumWordsLookedUp">
+      <td colspan=2>
+        <div id='numWordsLookedUp'></div>
+      </td>
+    </tr>
+    <tr id="trdoYouRemember">
+      <td colspan=2>
+        How many of them do you remember?<br>
+        <input type="text" id="numRememberedWords"/> words.
+      </td>
+    </tr>
+    <tr id="trnumWordsRemembered">
+      <td colspan=2>
+        <div id='numWordsRemembered'></div>
+      </td>
+    </tr>
+    <tr id="trnumHighlights">
+      <td colspan=2>
+        <div id='numHighlights'></div>
+      </td>
+    </tr>
+    <tr id="trnumHighlightsReminded">
+      <td colspan=2>
+        <div id='numHighlightsReminded'></div>
+      </td>
+    </tr>
+    <tr id='survey2'>
+      <td colspan=2>
+        <a href='https://docs.google.com/spreadsheet/viewform?formkey=dGQ3TXVLUVB0N09pbXBldWRieDJXYkE6MQ#gid=0' target='_blank' id='goToSurvey'>I understand, take me to the survey</a> (opens in new tab; change back to this tab when instructed to do so from the survey).
+      </td>
+    </tr>
+    <tr id="next1">
+      <td colspan=2>
+        <button id='nextBtn1'>Next</button>
+      </td>
+    </tr>
+    <tr id="next2">
+      <td colspan=2>
+        <button id='nextBtn2'>Next</button>
+      </td>
+    </tr>
+    <tr id="next3">
+      <td colspan=2>
+        <button id='nextBtn3'>Finish</button>
+      </td>
+    </tr>
+    <tr id="error">
+      <td colspan=2>
+        Sorry, you have not yet used the extension.<br><br>
+        Please try again once you've used it to look up some words.<br><br>
+        You may now close this tab.
+    </td>
+    </tr>
+  </table>
+
+  <table id="wordList">
+  </table>
+
+</body>
+</html>

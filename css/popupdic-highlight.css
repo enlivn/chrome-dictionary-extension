@@ -1,0 +1,23 @@
+#wordDefDiv{
+  display: none;
+  position: fixed;
+  background-color:#FAED96;
+  display: block;
+  font-family: arial, verdana, sans-serif;
+  margin: 0px !important;
+  border: 0px !important;
+  z-index: 2147483647 !important; /* MAX z-index = 2147483647 */
+}
+
+span.addedWordHighlight{
+  color:black;
+  background-color:#FFB573;
+}
+
+table#word-meanings{
+  width: 200px;
+}
+
+table#word-meanings td{
+  text-align: center !important;
+}

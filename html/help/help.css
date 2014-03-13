@@ -1,0 +1,52 @@
+/*****************************************************************************************************************
+ * Start of File
+ ****************************************************************************************************************/
+/* Button Styling */
+html, body {
+  font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+  font-size: 15px;
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+html > body{
+  min-height: 740px;
+  /*background-color: #808080;*/
+  /*background-color: #444;*/
+  /*background-image: url('../../../images/pages/common/background.png');*/
+  text-align: justify;
+}
+
+table#poisonHolder{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td.featuresChoice{
+  padding: 10px 10px;
+  text-shadow: 0.1em 0.1em 0.4em black;
+  padding-top: 10px;
+  border-right: 1px solid #716F64;
+  border-right-color: #ACA899;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #E7E59C));
+  width: 25%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold
+}
+
+span.popupDic{
+  font-style: italic;
+  font-weight: normal;
+  color: #FF0084;
+}
+
+div#tabs{
+  /*height:585px;*/
+  width:100%;
+}
+/*****************************************************************************************************************
+ * EOF
+ ****************************************************************************************************************/

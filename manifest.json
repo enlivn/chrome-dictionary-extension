@@ -1,0 +1,35 @@
+{
+  "name": "popupDic",
+  "version": "0.1",
+  "description": "Popup Dictionary for French Learners",
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "browser_action": {
+    "_comment": "For Chrome's toolbar",
+    "default_icon": "images/icon19.png",
+    "default_title": "Popup Dictionary for Language Learners",
+    "default_popup": "html/browserActionPopup.html"
+  },
+  "permissions": [
+    "tabs",
+    "http://api.wordreference.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "file://*/*"
+      ],
+      "js": ["html/jquery-1.7.1.min.js","js/contentScript.js"],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ]
+}

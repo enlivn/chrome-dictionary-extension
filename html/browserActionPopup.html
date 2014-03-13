@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script src="jquery-1.7.1.min.js" type="text/javascript"></script>
+
+  <script src="browserActionPopup/jquery.ibutton.js" type="text/javascript" charset="utf-8"></script>
+  <script src="browserActionPopup/browserActionPopup.js" type="text/javascript" charset="utf-8"></script>
+
+  <link rel="stylesheet" href="browserActionPopup/browserActionPopup.css" type="text/css" media="screen" charset="utf-8" />
+</head>
+<body>
+  <div id='popupDicLoadingIcon'>
+    <center>
+      <img src='browserActionPopup/loading.gif'/>
+      <p>Waiting for page to load...</p>
+    </center>
+  </div>
+  <table id='popupDic-table'>
+    <th id='popupDicIcon' colspan=2>
+      <img src='browserActionPopup/icon.png'/>
+    </th>
+    <tr class="extEnable">
+      <th><label for="on_off">Status</label></th>
+      <td>
+        <input type="checkbox" id="on_off" />
+      </td>
+    </tr>
+    <tr class="extHighlight">
+      <th><label for="highlight"><span id="highlightLabel">Highlighting</span></label></th>
+      <td>
+        <input type="checkbox" id="highlight" disabled="disabled"/>
+      </td>
+    </tr>
+    <tr class="extShowWordlist">
+      <th><label for="showSidebar"><span id="showSidebarLabel">Sidebar</span></label></th>
+      <td>
+        <input type="checkbox" id="showSidebar" disabled="disabled"/>
+      </td>
+    </tr>
+  </table>
+  <table id='popupDic-infoMsg'>
+    <th id='popupDicIcon' colspan=2>
+      <img src='browserActionPopup/warning.png'/>
+    </th>
+    <tr>
+      <th colspan=2><br>Sorry, popupDic can only be used on a normal web page with text</th>
+    </tr>
+  </table>
+  <div id='getHelpDiv'>
+    <a id='getHelpURL' style='color:blue' href='' onclick='return false;'>Get Help</a>
+  </div>
+</body>
+</html>
