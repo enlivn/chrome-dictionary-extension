@@ -58,7 +58,7 @@ onceInited = false; //only set once the page is loaded
  * Source: http://bcmoney-mobiletv.com/blog/2011/06/01/wordreference-ajax-sdk-widget */
 var API = 'http://api.wordreference.com';  //base URL for the API request
 var API_VERSION = '0.8';                   //leave blank '' for latest version
-var API_KEY = '';                     //get your own!
+var API_KEY = '';                          //get your own!
 var API_FORMAT = 'json';                   //'json' for JSON response type, or, blank '' for HTML
 var LANGUAGE = 'fren';
 var REVLANGUAGE = 'enfr';

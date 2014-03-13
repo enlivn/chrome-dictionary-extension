@@ -18,3 +18,5 @@ The advantages are:
 
 Screenshot:
 ![Screenshot](/screenshot/screenshot.png)
+
+**Note**: This code will NOT work unless a Wordreference API key is provided in js/contentScript.js
