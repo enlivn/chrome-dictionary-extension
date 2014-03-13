@@ -1,4 +1,4 @@
-Chrome Popup Dictionary
+Chrome Popup Dictionary for Second-Language Vocabulary Learning
 ========
 This project is a Google Chrome browser dictionary extension for improving second-language vocabulary learning. It uses the WordReference API and the Chrome Extension Framework.
 
